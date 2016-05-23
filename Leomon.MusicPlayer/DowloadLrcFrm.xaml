@@ -1,0 +1,36 @@
+﻿<Window x:Class="Leomon.MusicPlayer.DowloadLrcFrm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="歌词下载" Height="300" Width="316.846" Icon="pictures/Music.png" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.3*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="6*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="1" VerticalAlignment="Center" Orientation="Horizontal">
+            <TextBlock Text="解析方式" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0"></TextBlock>
+            <ComboBox Margin="130,0,0,0" Width="100" Name ="analyzeModeComboBox" SelectionChanged="analyzeModeComboBox_SelectionChanged">
+                <ComboBoxItem>歌名--歌手</ComboBoxItem>
+                <ComboBoxItem>歌手--歌名</ComboBoxItem>
+                <ComboBoxItem>其他</ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+        <StackPanel Grid.Row="2" VerticalAlignment="Center" Orientation="Horizontal">
+            <TextBlock Margin="10,0,0,0">歌手</TextBlock>
+            <TextBox Name="singerTB" Margin="10, 0, 0, 0" Width="100" Foreground="Blue" TextAlignment="Center"></TextBox>
+            <TextBlock Margin="10, 0, 0, 0">歌名</TextBlock>
+            <TextBox Name="songNameTB" Margin="10, 0, 0, 0" Width="100" Foreground="Blue" TextAlignment="Center"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="3" Orientation="Horizontal" VerticalAlignment="Center">
+            <Button Name="searchButton" Margin="10, 0, 0, 0" Padding="6, 2, 6, 2" Click="searchButton_Click">搜索歌词</Button>
+            <ProgressBar Name="progressBar" Margin="20, 0, 0, 0" Width="200" Height="10" IsIndeterminate="True" Visibility="Collapsed"></ProgressBar>
+        </StackPanel>
+        <StackPanel Orientation="Vertical" Grid.Row="4">
+            <TextBlock Margin="10 5 0 0" Foreground="DarkGreen">匹配的歌词列表(双击选择项开始下载)</TextBlock>
+            <ListBox Name="matchedLrcListBox" Margin="10, 5, 10, 5" Height="140" Foreground="Blue"></ListBox>
+        </StackPanel>
+    </Grid>
+</Window>

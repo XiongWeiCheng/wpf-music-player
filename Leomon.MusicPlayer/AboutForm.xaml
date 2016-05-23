@@ -1,0 +1,38 @@
+﻿<Window x:Class="Leomon.MusicPlayer.AboutForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="关于Music Player" Height="357.554" Width="300" WindowStartupLocation="CenterScreen" Icon="pictures/Music.png" ResizeMode="CanMinimize">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="133*"/>
+            <RowDefinition Height="186*"/>
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <StackPanel Orientation="Horizontal" Grid.Row="0" HorizontalAlignment="Center" Margin="0,5,0,5">
+                <TextBlock TextAlignment="Center" FontSize="20" FontFamily="Consolas" Foreground="#FF2315B0">Music Player</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="15,5,0,5" >软件版本：</TextBlock>
+                <TextBlock Margin="70,5,0,5" Foreground="DarkGreen">Version 2.0.0.3</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="15,5,0,5" >编译时间：</TextBlock>
+                <TextBlock Margin="70,5,0,5" Foreground="DarkGreen">2014-03-09 星期日</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="15, 5, 0, 5">作　　者：</TextBlock>
+                <TextBlock Margin="70, 5, 0 ,5" Foreground="DarkGreen">leomon</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="15, 5, 0, 5">邮　　箱：</TextBlock>
+                <TextBlock Margin="70, 5, 0 ,5" Foreground="DarkGreen">1964416932@qq.com</TextBlock>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <TextBlock Margin="15, 5, 0, 5">相关说明：</TextBlock>
+            <TextBox Margin="15, 0, 15, 0" Background="White" Foreground="DarkCyan" IsReadOnly="True" TextWrapping="WrapWithOverflow"
+                     Name="declarationTB" Height="158" ScrollViewer.VerticalScrollBarVisibility="Auto">
+            </TextBox>
+        </StackPanel>
+    </Grid>
+</Window>

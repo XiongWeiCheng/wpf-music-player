@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leomon.MusicPlayer", "Leomon.MusicPlayer\Leomon.MusicPlayer.csproj", "{15167457-B2C5-4DC3-AFB7-2E492B20097C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leomon.Lyric", "Leomon.Lyric\Leomon.Lyric.csproj", "{FF5AC46C-745C-4811-A5EC-9CDC212C68D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leomon.SPLibrary", "Leomon.SPLibrary\Leomon.SPLibrary.csproj", "{7D309BD2-9972-476E-A1EF-37977EDB97EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leomon.LyricDownloader", "Leomon.LyricDownloader\Leomon.LyricDownloader.csproj", "{EEDAB3ED-7E0E-4AD2-BCAE-09EB6A00CC79}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15167457-B2C5-4DC3-AFB7-2E492B20097C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15167457-B2C5-4DC3-AFB7-2E492B20097C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15167457-B2C5-4DC3-AFB7-2E492B20097C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15167457-B2C5-4DC3-AFB7-2E492B20097C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF5AC46C-745C-4811-A5EC-9CDC212C68D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF5AC46C-745C-4811-A5EC-9CDC212C68D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF5AC46C-745C-4811-A5EC-9CDC212C68D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF5AC46C-745C-4811-A5EC-9CDC212C68D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D309BD2-9972-476E-A1EF-37977EDB97EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D309BD2-9972-476E-A1EF-37977EDB97EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D309BD2-9972-476E-A1EF-37977EDB97EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D309BD2-9972-476E-A1EF-37977EDB97EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEDAB3ED-7E0E-4AD2-BCAE-09EB6A00CC79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEDAB3ED-7E0E-4AD2-BCAE-09EB6A00CC79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEDAB3ED-7E0E-4AD2-BCAE-09EB6A00CC79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEDAB3ED-7E0E-4AD2-BCAE-09EB6A00CC79}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
