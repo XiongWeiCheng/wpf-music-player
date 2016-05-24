@@ -43,7 +43,23 @@
 2. ![](./ScreenShots/2.png)
 3. ![](./ScreenShots/3.png)
 
+### 运行测试
+1. 请[下载](https://github.com/ChrisLeeGit/wpf-music-player/releases)编译好的播放器程序，并解压到本地；
+2. 确保安装了`.Net Framework 4.0`，然后双击其中的`*MusicPlayer.exe`运行即可。
+
+### 编译开发
+1. 请将该Visual Studio项目下载到本地并解压；
+2. 推荐使用`Visual Studio 2013`及以上版本打开项目解决方案文件`Leomon.MusicPlayer.sln`；
+3. 成功打开后，请点击`启动`按钮，开始编译工程代码；此时，必然会提示出现找不到一些命名空间等错误发生；
+4. 在出现上述错误后，请见将`EssentialLibraries`目录中的所有文件和文件夹拷贝到`Debug`（或者`Release`）目录下，然后，尝试重新编译即可。
+
+### 注意
+- 播放器依然有很多不够完美的地方，请见谅；
+- 目前播放器只支持本地音频文件播放，可以考虑添加在线播放等功能；
+- 播放器代码组织的不是很好，所以请**取其精华，弃其糟粕**。
+
 ### 贡献
 - 播放器编写完成后，在**[百度贴吧——C#吧](http://tieba.baidu.com/f?kw=c%23)**提供了下载链接，得到了一些网友的反馈，非常感激。
 
-### 编译开发
+### 许可
+Licensed under the [MIT License](./LICENSE.md). Enjoy it ~
