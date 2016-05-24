@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>个人音乐播放器 by ChrisLeeGit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">个人音乐播放器</h1>
+      <h2 class="project-tagline">一款简单的基于C#&amp;WPF的音乐播放器软件，喜欢你喜欢~</h2>
+      <a href="https://github.com/ChrisLeeGit/wpf-music-player" class="btn">View on GitHub</a>
+      <a href="https://github.com/ChrisLeeGit/wpf-music-player/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/ChrisLeeGit/wpf-music-player/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h2>
+<a id="wpf音乐播放器" class="anchor" href="#wpf%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>WPF音乐播放器</h2>
+
+<hr>
+
+<h3>
+<a id="说明" class="anchor" href="#%E8%AF%B4%E6%98%8E" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>说明</h3>
+
+<ul>
+<li>一款简单的个人音乐播放器，基于<code>WPF C# .Net Framework 4.0</code>开发；</li>
+<li>开发环境：<code>Visual Studio 2013</code> ；</li>
+<li>主要使用的第三方模块：
+
+<ul>
+<li><code>DoubanFM.Bass.dll</code></li>
+<li><code>Bass.Net.dll</code></li>
+<li><code>bass.dll</code></li>
+<li><code>WPFSoundVisualizationLib.dll</code></li>
+</ul>
+</li>
+<li>播放器UI也是绞尽脑汁才想到的，之后花了很多功夫去完善。毕竟不是专业UI设计人员，所以不是很完美，希望你喜欢 :)</li>
+<li>播放器在编写过程中，曾经遇到很多困难，但最终都克服了过来。期间参考了一些网友的设计理念，示例代码等，得到了很多帮助。但由于过去的的时间比较久了，不能一一列举出来，总之非常感激！</li>
+</ul>
+
+<h3>
+<a id="功能" class="anchor" href="#%E5%8A%9F%E8%83%BD" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>功能</h3>
+
+<h4>
+<a id="常规功能" class="anchor" href="#%E5%B8%B8%E8%A7%84%E5%8A%9F%E8%83%BD" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>常规功能</h4>
+
+<ul>
+<li>
+<p>支持常见音频文件播放，支持基本的播放控制模式：</p>
+
+<ul>
+<li>播放/暂停</li>
+<li>曲目切换</li>
+</ul>
+</li>
+<li>
+<p>支持的播放模式：</p>
+
+<ul>
+<li>顺序播放</li>
+<li>列表循环</li>
+<li>随机播放</li>
+<li>单曲循环</li>
+</ul>
+</li>
+<li>
+<p>支持歌词文件（仅<code>lrc</code>格式）加载及歌词显示功能：</p>
+
+<ul>
+<li>支持指定加载指定路径的歌词</li>
+<li>支持自动加载歌曲同名歌词文件</li>
+<li>支持播放器界面内滚动显示歌词和桌面歌词两种模式</li>
+</ul>
+</li>
+<li><p>支持从手动下载歌曲歌词功能</p></li>
+<li>支持简单的歌曲搜索</li>
+</ul>
+
+<h4>
+<a id="其他功能" class="anchor" href="#%E5%85%B6%E4%BB%96%E5%8A%9F%E8%83%BD" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>其他功能</h4>
+
+<ul>
+<li>支持播放器界面透明度修改功能</li>
+<li>支持自定义背景图片功能</li>
+<li>支持自动以放映模式播放指定目录中的图片</li>
+<li>还支持一些其他功能，详细请自行测试，参见软件设置对话框</li>
+<li>支持记忆播放、歌曲列表自动保存功能</li>
+</ul>
+
+<h3>
+<a id="演示截图" class="anchor" href="#%E6%BC%94%E7%A4%BA%E6%88%AA%E5%9B%BE" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>演示截图</h3>
+
+<ol>
+<li><img src="./ScreenShots/1.png" alt=""></li>
+<li><img src="./ScreenShots/2.png" alt=""></li>
+<li><img src="./ScreenShots/3.png" alt=""></li>
+</ol>
+
+<h3>
+<a id="运行测试" class="anchor" href="#%E8%BF%90%E8%A1%8C%E6%B5%8B%E8%AF%95" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>运行测试</h3>
+
+<ol>
+<li>请<a href="https://github.com/ChrisLeeGit/wpf-music-player/releases">下载</a>编译好的播放器程序，并解压到本地；</li>
+<li>确保安装了<code>.Net Framework 4.0</code>，然后双击其中的<code>*MusicPlayer.exe</code>运行即可。</li>
+</ol>
+
+<h3>
+<a id="编译开发" class="anchor" href="#%E7%BC%96%E8%AF%91%E5%BC%80%E5%8F%91" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>编译开发</h3>
+
+<ol>
+<li>请将该Visual Studio项目下载到本地并解压；</li>
+<li>推荐使用<code>Visual Studio 2013</code>及以上版本打开项目解决方案文件<code>Leomon.MusicPlayer.sln</code>；</li>
+<li>成功打开后，请点击<code>启动</code>按钮，开始编译工程代码；此时，必然会提示出现找不到一些命名空间等错误发生；</li>
+<li>在出现上述错误后，请见将<code>EssentialLibraries</code>目录中的所有文件和文件夹拷贝到<code>Debug</code>（或者<code>Release</code>）目录下，然后，尝试重新编译即可。</li>
+</ol>
+
+<h3>
+<a id="注意" class="anchor" href="#%E6%B3%A8%E6%84%8F" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>注意</h3>
+
+<ul>
+<li>播放器依然有很多不够完美的地方，请见谅；</li>
+<li>目前播放器只支持本地音频文件播放，可以考虑添加在线播放等功能；</li>
+<li>播放器代码组织的不是很好，所以请<strong>取其精华，弃其糟粕</strong>。</li>
+</ul>
+
+<h3>
+<a id="贡献" class="anchor" href="#%E8%B4%A1%E7%8C%AE" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>贡献</h3>
+
+<ul>
+<li>播放器编写完成后，在<strong><a href="http://tieba.baidu.com/f?kw=c%23">百度贴吧——C#吧</a></strong>提供了下载链接，得到了一些网友的反馈，非常感激。</li>
+</ul>
+
+<h3>
+<a id="许可" class="anchor" href="#%E8%AE%B8%E5%8F%AF" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>许可</h3>
+
+<p>Licensed under the <a href="./LICENSE.md">MIT License</a>. Enjoy it ~</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/ChrisLeeGit/wpf-music-player">个人音乐播放器</a> is maintained by <a href="https://github.com/ChrisLeeGit">ChrisLeeGit</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
