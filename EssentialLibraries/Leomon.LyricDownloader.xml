@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Leomon.LyricDownloader</name>
+    </assembly>
+    <members>
+        <member name="T:Leomon.LyricDownloader.MyLyricDownLoader">
+            <summary>
+            歌词下载类。
+            </summary>
+        </member>
+        <member name="F:Leomon.LyricDownloader.MyLyricDownLoader.SearchPath">
+            <summary>
+            字段：搜索路径
+            </summary>
+        </member>
+        <member name="F:Leomon.LyricDownloader.MyLyricDownLoader.DownloadPath">
+            <summary>
+            字段：下载路径
+            </summary>
+        </member>
+        <member name="F:Leomon.LyricDownloader.MyLyricDownLoader.needProxy">
+            <summary>
+            字段：是否需要开启代理下载
+            </summary>
+        </member>
+        <member name="F:Leomon.LyricDownloader.MyLyricDownLoader.proxy">
+            <summary>
+            字段：Http代理
+            </summary>
+        </member>
+        <member name="F:Leomon.LyricDownloader.MyLyricDownLoader.currentSong">
+            <summary>
+            字段：歌曲xml
+            </summary>
+        </member>
+        <member name="M:Leomon.LyricDownloader.MyLyricDownLoader.#ctor(System.Boolean)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="needProxy">是否开启代理下载</param>
+        </member>
+        <member name="M:Leomon.LyricDownloader.MyLyricDownLoader.RequestALink(System.String)">
+            <summary>
+            方法：获取歌词的下载链接
+            </summary>
+            <param name="link"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Leomon.LyricDownloader.MyLyricDownLoader.DownloadLyric(System.Xml.XmlDocument)">
+            <summary>
+            方法：下载歌词
+            </summary>
+            <param name="singer">歌手</param>
+            <param name="title">歌名</param>
+            <param name="downloadNow">是否下载</param>
+            <returns></returns>
+        </member>
+        <member name="M:Leomon.LyricDownloader.MyLyricDownLoader.OnInitilizeProxy">
+            <summary>
+            当初始化代理设置时触发
+            </summary>
+        </member>
+        <member name="M:Leomon.LyricDownloader.MyLyricDownLoader.OnWebException(System.Net.WebException)">
+            <summary>
+            当发生网络请求错误时发生
+            </summary>
+            <param name="ex"></param>
+        </member>
+        <member name="M:Leomon.LyricDownloader.MyLyricDownLoader.OnSelectSong(System.Xml.XmlNodeList)">
+            <summary>
+            当选择歌曲节点时触发
+            </summary>
+            <param name="list"></param>
+        </member>
+        <member name="M:Leomon.LyricDownloader.MyLyricDownLoader.SearchLyric(System.String,System.String)">
+            <summary>
+            获得有关歌词的xml待下载目录
+            </summary>
+            <param name="singer"></param>
+            <param name="title"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Leomon.LyricDownloader.MyLyricDownLoader.NeedProxy">
+            <summary>
+            属性：是否需要开启代理下载
+            </summary>
+        </member>
+        <member name="P:Leomon.LyricDownloader.MyLyricDownLoader.Proxy">
+            <summary>
+            属性：Http代理
+            </summary>
+        </member>
+        <member name="P:Leomon.LyricDownloader.MyLyricDownLoader.CurrentSong">
+            <summary>
+            属性：当前查询歌曲
+            </summary>
+        </member>
+    </members>
+</doc>

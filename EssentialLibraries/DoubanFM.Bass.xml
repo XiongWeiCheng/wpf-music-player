@@ -1,0 +1,304 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DoubanFM.Bass</name>
+    </assembly>
+    <members>
+        <member name="T:DoubanFM.Bass.BassEngine">
+            <summary>
+            Bass播放器
+            </summary>
+        </member>
+        <member name="F:DoubanFM.Bass.BassEngine.instance">
+            <summary>
+            BassEngine的唯一实例
+            </summary>
+        </member>
+        <member name="F:DoubanFM.Bass.BassEngine.positionTimer">
+            <summary>
+            用于更新播放进度的计时器
+            </summary>
+        </member>
+        <member name="F:DoubanFM.Bass.BassEngine.endTrackSyncProc">
+            <summary>
+            当播放结束时调用
+            </summary>
+        </member>
+        <member name="F:DoubanFM.Bass.BassEngine.activeStreamHandle">
+            <summary>
+            当前流的句柄
+            </summary>
+        </member>
+        <member name="F:DoubanFM.Bass.BassEngine.canPlay">
+            <summary>
+            可以使用播放命令
+            </summary>
+        </member>
+        <member name="F:DoubanFM.Bass.BassEngine.canPause">
+            <summary>
+            可以使用暂停命令
+            </summary>
+        </member>
+        <member name="F:DoubanFM.Bass.BassEngine.isPlaying">
+            <summary>
+            是否正在播放
+            </summary>
+        </member>
+        <member name="F:DoubanFM.Bass.BassEngine.canStop">
+            <summary>
+            可以使用停止命令
+            </summary>
+        </member>
+        <member name="F:DoubanFM.Bass.BassEngine.channelLength">
+            <summary>
+            音频长度
+            </summary>
+        </member>
+        <member name="F:DoubanFM.Bass.BassEngine.currentChannelPosition">
+            <summary>
+            当前播放进度
+            </summary>
+        </member>
+        <member name="F:DoubanFM.Bass.BassEngine.onlineFileWorker">
+            <summary>
+            用于异步打开网络音频文件的线程
+            </summary>
+        </member>
+        <member name="F:DoubanFM.Bass.BassEngine.pendingOperation">
+            <summary>
+            待执行的命令，当打开网络上的音频时非常有用
+            </summary>
+        </member>
+        <member name="F:DoubanFM.Bass.BassEngine.volume">
+            <summary>
+            音量
+            </summary>
+        </member>
+        <member name="F:DoubanFM.Bass.BassEngine.isMuted">
+            <summary>
+            是否静音
+            </summary>
+        </member>
+        <member name="F:DoubanFM.Bass.BassEngine.proxyHandle">
+            <summary>
+            代理服务器设置的非托管资源句柄
+            </summary>
+        </member>
+        <member name="F:DoubanFM.Bass.BassEngine.openningFile">
+            <summary>
+            保存正在打开的文件的地址，当短时间内多次打开网络文件时，这个字段保存最后一次打开的文件，可以使其他打开文件的操作失效
+            </summary>
+        </member>
+        <member name="M:DoubanFM.Bass.BassEngine.ExplicitInitialize(System.Nullable{DoubanFM.Bass.DeviceInfo})">
+            <summary>
+            显式初始化
+            </summary>
+        </member>
+        <member name="M:DoubanFM.Bass.BassEngine.GetDeviceInfos">
+            <summary>
+            获取设备列表
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DoubanFM.Bass.BassEngine.ChangeDevice(System.Nullable{DoubanFM.Bass.DeviceInfo})">
+            <summary>
+            更换设备
+            </summary>
+        </member>
+        <member name="M:DoubanFM.Bass.BassEngine.Stop">
+            <summary>
+            停止当前音频，并释放资源
+            </summary>
+        </member>
+        <member name="M:DoubanFM.Bass.BassEngine.Pause">
+            <summary>
+            暂停当前音频
+            </summary>
+        </member>
+        <member name="M:DoubanFM.Bass.BassEngine.Play">
+            <summary>
+            播放当前音频
+            </summary>
+        </member>
+        <member name="M:DoubanFM.Bass.BassEngine.OpenFile(System.String)">
+            <summary>
+            打开文件
+            </summary>
+            <param name="filename">文件名</param>
+        </member>
+        <member name="M:DoubanFM.Bass.BassEngine.OpenUrlAsync(System.String)">
+            <summary>
+            打开网络地址
+            </summary>
+            <param name="url">URL地址</param>
+        </member>
+        <member name="M:DoubanFM.Bass.BassEngine.SetProxy(System.String,System.Int32,System.String,System.String)">
+            <summary>
+            设置代理服务器
+            </summary>
+            <param name="host">主机</param>
+            <param name="port">端口</param>
+            <param name="username">用户名</param>
+            <param name="password">密码</param>
+        </member>
+        <member name="M:DoubanFM.Bass.BassEngine.UseDefaultProxy">
+            <summary>
+            使用默认代理服务器
+            </summary>
+        </member>
+        <member name="M:DoubanFM.Bass.BassEngine.DontUseProxy">
+            <summary>
+            不使用任何代理服务器
+            </summary>
+        </member>
+        <member name="M:DoubanFM.Bass.BassEngine.positionTimer_Tick(System.Object,System.EventArgs)">
+            <summary>
+            更新播放进度
+            </summary>
+        </member>
+        <member name="M:DoubanFM.Bass.BassEngine.FindDevice(System.Nullable{DoubanFM.Bass.DeviceInfo},System.Boolean)">
+            <summary>
+            查找设备的序号
+            </summary>
+            <param name="device">要查找的设备</param>
+            <param name="returnDefault">当找不到设备时，是否返回默认设备的序号</param>
+            <returns></returns>
+        </member>
+        <member name="M:DoubanFM.Bass.BassEngine.FindDefaultDevice">
+            <summary>
+            返回默认设备的序号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:DoubanFM.Bass.BassEngine.Initialize(System.Nullable{DoubanFM.Bass.DeviceInfo})">
+            <summary>
+            初始化BassEngine
+            </summary>
+        </member>
+        <member name="M:DoubanFM.Bass.BassEngine.PlayCurrentStream">
+            <summary>
+            播放当前流
+            </summary>
+        </member>
+        <member name="M:DoubanFM.Bass.BassEngine.FreeCurrentStream">
+            <summary>
+            释放当前流
+            </summary>
+        </member>
+        <member name="M:DoubanFM.Bass.BassEngine.SetVolume">
+            <summary>
+            设置音量
+            </summary>
+        </member>
+        <member name="M:DoubanFM.Bass.BassEngine.EndTrack(System.Int32,System.Int32,System.Int32,System.IntPtr)">
+            <summary>
+            播放完毕
+            </summary>
+        </member>
+        <member name="M:DoubanFM.Bass.BassEngine.RaiseTrackEndedEvent">
+            <summary>
+            引发播放完毕事件
+            </summary>
+        </member>
+        <member name="M:DoubanFM.Bass.BassEngine.RaiseOpenFailedEvent">
+            <summary>
+            引发打开音频文件失败事件
+            </summary>
+        </member>
+        <member name="M:DoubanFM.Bass.BassEngine.RaiseOpenSucceededEvent">
+            <summary>
+            引发打开音频文件成功事件
+            </summary>
+        </member>
+        <member name="P:DoubanFM.Bass.BassEngine.Instance">
+            <summary>
+            获取BassEngine的唯一实例
+            </summary>
+        </member>
+        <member name="P:DoubanFM.Bass.BassEngine.ChannelLength">
+            <summary>
+            长度
+            </summary>
+        </member>
+        <member name="P:DoubanFM.Bass.BassEngine.ChannelPosition">
+            <summary>
+            位置
+            </summary>
+        </member>
+        <member name="P:DoubanFM.Bass.BassEngine.ActiveStreamHandle">
+            <summary>
+            当前流的句柄
+            </summary>
+        </member>
+        <member name="P:DoubanFM.Bass.BassEngine.CanPlay">
+            <summary>
+            可以使用播放命令
+            </summary>
+        </member>
+        <member name="P:DoubanFM.Bass.BassEngine.CanPause">
+            <summary>
+            可以使用暂停命令
+            </summary>
+        </member>
+        <member name="P:DoubanFM.Bass.BassEngine.CanStop">
+            <summary>
+            可以使用停止命令
+            </summary>
+        </member>
+        <member name="P:DoubanFM.Bass.BassEngine.IsPlaying">
+            <summary>
+            是否正在播放
+            </summary>
+        </member>
+        <member name="P:DoubanFM.Bass.BassEngine.Volume">
+            <summary>
+            音量
+            </summary>
+        </member>
+        <member name="P:DoubanFM.Bass.BassEngine.IsMuted">
+            <summary>
+            是否静音
+            </summary>
+        </member>
+        <member name="P:DoubanFM.Bass.BassEngine.Device">
+            <summary>
+            设备（空代表默认设备）
+            </summary>
+        </member>
+        <member name="E:DoubanFM.Bass.BassEngine.TrackEnded">
+            <summary>
+            当播放完毕时发生。
+            </summary>
+        </member>
+        <member name="E:DoubanFM.Bass.BassEngine.OpenFailed">
+            <summary>
+            当打开音频文件失败时发生。
+            </summary>
+        </member>
+        <member name="E:DoubanFM.Bass.BassEngine.OpenSucceeded">
+            <summary>
+            当打开音频文件成功时发生。
+            </summary>
+        </member>
+        <member name="T:DoubanFM.Bass.BassEngine.PendingOperation">
+            <summary>
+            待执行的命令
+            </summary>
+        </member>
+        <member name="F:DoubanFM.Bass.BassEngine.PendingOperation.None">
+            <summary>
+            无
+            </summary>
+        </member>
+        <member name="F:DoubanFM.Bass.BassEngine.PendingOperation.Play">
+            <summary>
+            播放
+            </summary>
+        </member>
+        <member name="F:DoubanFM.Bass.BassEngine.PendingOperation.Pause">
+            <summary>
+            暂停
+            </summary>
+        </member>
+    </members>
+</doc>
