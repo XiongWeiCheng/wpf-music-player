@@ -38,10 +38,8 @@
 - 还支持一些其他功能，详细请自行测试，参见软件设置对话框
 - 支持记忆播放、歌曲列表自动保存功能
 
-### 演示截图
-1. ![](./ScreenShots/1.png)
-2. ![](./ScreenShots/2.png)
-3. ![](./ScreenShots/3.png)
+### 使用帮助
+- Read [wiki](https://github.com/ChrisLeeGit/wpf-music-player/wiki) page.
 
 ### 运行测试
 1. 请[下载](https://github.com/ChrisLeeGit/wpf-music-player/releases)编译好的播放器程序，并解压到本地；
@@ -53,6 +51,12 @@
 3. 成功打开后，请点击`启动`按钮，开始编译工程代码；此时，必然会提示出现找不到一些命名空间等错误发生；
 4. 在出现上述错误后，请见将`EssentialLibraries`目录中的所有文件和文件夹拷贝到`Debug`（或者`Release`）目录下，然后，尝试重新编译即可。
 
+### 演示截图
+1. ![](https://raw.githubusercontent.com/ChrisLeeGit/wpf-music-player/master/ScreenShots/1.png)
+2. ![](https://raw.githubusercontent.com/ChrisLeeGit/wpf-music-player/master/ScreenShots/2.png)
+3. ![](https://raw.githubusercontent.com/ChrisLeeGit/wpf-music-player/master/ScreenShots/3.png)
+
+
 ### 注意
 - 播放器依然有很多不够完美的地方，请见谅；
 - 目前播放器只支持本地音频文件播放，可以考虑添加在线播放等功能；
@@ -62,4 +66,4 @@
 - 播放器编写完成后，在**[百度贴吧——C#吧](http://tieba.baidu.com/f?kw=c%23)**提供了下载链接，得到了一些网友的反馈，非常感激。
 
 ### 许可
-Licensed under the [MIT License](./LICENSE.md). Enjoy it ~
+- Licensed under the [MIT License](./LICENSE.md). Enjoy it ~
