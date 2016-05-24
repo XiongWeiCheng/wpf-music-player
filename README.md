@@ -39,7 +39,7 @@
 - 支持记忆播放、歌曲列表自动保存功能
 
 ### 使用帮助
-- Read [wiki](https://github.com/ChrisLeeGit/wpf-music-player/wiki) page.
+- [Wiki](https://github.com/ChrisLeeGit/wpf-music-player/wiki)
 
 ### 运行测试
 1. 请[下载](https://github.com/ChrisLeeGit/wpf-music-player/releases)编译好的播放器程序，并解压到本地；
