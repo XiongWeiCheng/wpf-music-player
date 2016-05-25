@@ -62,6 +62,9 @@
 - 目前播放器只支持本地音频文件播放，可以考虑添加在线播放等功能；
 - 播放器代码组织的不是很好，所以请**取其精华，弃其糟粕**。
 
+### 开发日志
+- 日志参见：[LOG.md](https://github.com/ChrisLeeGit/wpf-music-player/blob/master/LOG.md)
+
 ### 贡献
 - 播放器编写完成后，在**[百度贴吧——C#吧](http://tieba.baidu.com/f?kw=c%23)**提供了下载链接，得到了一些网友的反馈，非常感激。
 
